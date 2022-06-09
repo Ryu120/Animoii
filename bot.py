@@ -23,7 +23,7 @@ ANIGSTART_TEXT = """Yoi, I am Animoii An Anime Bot With Anime Modules"""
 
 @bot.on_message(filters.command('start') & filters.group)
 def command1(bot, message):
-    bot.send_photo(message.chat.id, "https://telegra.ph/file/d61a486be521821df3392.jpg" , caption=GRPSTART_TEXT ,reply_markup=InlineKeyboardMarkup(
+    bot.send_photo(message.chat.id, "https://telegra.ph/file/d61a486be521821df3392.jpg" , caption=ANIGSTART_TEXT ,reply_markup=InlineKeyboardMarkup(
          [
                 [InlineKeyboardButton("I AM FROM"  , url="https://t.me/JJK_TECH")]
             
