@@ -83,7 +83,7 @@ def callbackk(_,query):
         except:
             query.answer("Refreshed!")
 
-       tracemoe = tracemoepy.tracemoe.TraceMoe()
+tracemoe = tracemoepy.tracemoe.TraceMoe()
 
 @bot.on_message(filters.command('whatanime'))
 def whatanime(_,message):
