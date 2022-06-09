@@ -19,6 +19,17 @@ bot = Client(
     api_hash = API_HASH, 
     bot_token = BOT_TOKEN)
 
+ANIGSTART_TEXT = """Yoi, I am Animoii An Anime Bot With Anime Modules"""
+
+@bot.on_message(filters.command('start') & filters.group)
+def command1(bot, message):
+    bot.send_photo(message.chat.id, "https://telegra.ph/file/d61a486be521821df3392.jpg" , caption=GRPSTART_TEXT ,reply_markup=InlineKeyboardMarkup(
+         [
+                [InlineKeyboardButton("I AM FROM"  , url="https://t.me/JJK_TECH")]
+            
+            ]))
+
+
 def call_back_in_filter(data):
     return filters.create(
         lambda flt, _, query: flt.data in query.data,
