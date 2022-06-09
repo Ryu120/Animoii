@@ -1,0 +1,6 @@
+bs4
+aiohttp
+requests
+tgcrypto
+pyrogram
+tracemoepy
